@@ -1,5 +1,5 @@
 module "test-vpc-module-02" {
-  source = "."
+  source = "../.."
   project_id   = var.project
   network_name = "gaurav-network"
 
