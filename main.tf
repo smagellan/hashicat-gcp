@@ -67,10 +67,10 @@ resource "google_compute_instance" "hashicat" {
     ssh-keys = "ubuntu:${chomp(tls_private_key.ssh-key.public_key_openssh)} terraform"
   }
 
-  tags = ["http-server"]
+  tags = ["http-server", "billable", "department"]
 
   labels = {
-    name = "hashicat billable department"
+    name = "hashicat"
   }
 
 }
